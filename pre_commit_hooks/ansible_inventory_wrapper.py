@@ -2,7 +2,6 @@ import subprocess
 import argparse
 from typing import Optional, Sequence
 
-
 def main(argv: Optional[Sequence[str]] = None):
     parser = argparse.ArgumentParser()
     parser.add_argument('filenames', nargs='*')
@@ -20,7 +19,6 @@ def main(argv: Optional[Sequence[str]] = None):
             print(f"For details manually run: ansible-inventory --list -i {filename} -vvvv")
             result = 1
     exit(result)
-
 
 if __name__ == '__main__':
     exit(main())
