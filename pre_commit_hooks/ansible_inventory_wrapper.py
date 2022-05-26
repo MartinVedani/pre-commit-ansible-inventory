@@ -11,13 +11,15 @@ def main(argv: Optional[Sequence[str]] = None):
 
     for filename in args.filenames:
         cp = subprocess.run(
-            ['ansible-inventory', '--list', '-i', filename, '-vvvv'],
+            ['ansible-inventory', '--list', '-i', filename],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE)
         if(cp.stderr):
             print(
                 f"ansible-inventory failed on file {filename} with following output:")
             print(cp.stderr.decode())
+            print(
+                f"manually run the following command: ansible-inventory --list -i {filename} -vvvv")
             result = 1
     exit(result)
 
