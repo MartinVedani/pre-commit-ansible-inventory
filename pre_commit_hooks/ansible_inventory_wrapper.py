@@ -18,7 +18,7 @@ def main(argv: Optional[Sequence[str]] = None):
             # print(
             # f"ansible-inventory failed on file {filename} with following output:")
             print(
-                f"ansible-inventory failed; manually run: ansible-inventory --list -i {filename} -vvvv")
+                f"Ansible-inventory failed. for details manually run: ansible-inventory --list -i {filename} -vvvv")
             print(cp.stderr.decode())
             result = 1
     exit(result)
