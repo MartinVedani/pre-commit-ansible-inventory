@@ -14,7 +14,7 @@ This hook runs `ansible-inventory` against files defined in pre-commit config. A
 
 ```yaml
 - repo: https://github.com/MartinVedani/pre-commit-ansible-inventory
-  rev: v0.2.0
+  rev: v0.1.1
   hooks:
     - id: ansible-inventory
       files: inventory.yaml
