@@ -15,11 +15,11 @@ def main(argv: Optional[Sequence[str]] = None):
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE)
         if(cp.stderr):
-            # print(
-            # f"ansible-inventory failed on file {filename} with following output:")
             print(
-                f"Ansible-inventory failed. For details manually run: ansible-inventory --list -i {filename} -vvvv")
+                f"ansible-inventory failed on file {filename} with following output:")
             print(cp.stderr.decode())
+            print(
+                f"For details manually run: ansible-inventory --list -i {filename} -vvvv")
             result = 1
     exit(result)
 
