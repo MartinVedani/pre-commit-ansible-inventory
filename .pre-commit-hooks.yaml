@@ -2,7 +2,7 @@
 - id: ansible-inventory
   name: Ansible-inventory
   description: Run ansible-inventory on inventory file
-  entry: ansible-inventory-wrapper
+  entry: ansible-inventory-wrapper -vvvv
   language: python
   pass_filenames: true
   always_run: false
