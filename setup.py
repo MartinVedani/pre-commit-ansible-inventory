@@ -6,7 +6,7 @@ setup(
     author="Mikko Salmi",
     author_email="43180721+mjsalmi@users.noreply.github.com",
     version=open("VERSION", "r").read().strip(),
-    install_requires=["ansible"],
+    install_requires=["ansible-base==2.10.17"],
     license="MIT",
     packages=["pre_commit_hooks"],
     entry_points={
