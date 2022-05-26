@@ -2,9 +2,9 @@ from setuptools import setup
 
 setup(
     name="pre_commit_ansible-inventory",
-    url="https://github.com/mjsalmi/pre-commit-ansible-inventory",
-    author="Mikko Salmi",
-    author_email="43180721+mjsalmi@users.noreply.github.com",
+    url="https://github.com/MartinVedani/pre-commit-ansible-inventory",
+    author="Slightly adapted from Mikko Salmi",
+    author_email="martin.vedani@gmail.com",
     version=open("VERSION", "r").read().strip(),
     install_requires=["ansible-base==2.10.17"],
     license="MIT",
