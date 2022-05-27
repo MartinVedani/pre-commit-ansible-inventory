@@ -10,7 +10,7 @@ def main(argv: Optional[Sequence[str]] = None):
 
     for filename in args.filenames:
         cp = subprocess.run(
-            ['ansible-inventory','--list','-i',filename, 'linux'],
+            ['ansible-inventory','--list','-i',filename],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE)
         if(cp.stderr):
