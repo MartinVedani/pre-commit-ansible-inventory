@@ -14,7 +14,7 @@ def main(argv: Optional[Sequence[str]] = None):
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE)
         if(cp.stderr):
-            print(f"MV_ansible-inventory failed on file {filename} with following output:")
+            print(f"ansible-inventory failed on file {filename} with following output:")
             print(cp.stderr.decode())
             print(f"For details manually run: ansible-inventory --graph -i {filename} -vvvv")
             result = 1
