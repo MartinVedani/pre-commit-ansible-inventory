@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import subprocess
 import argparse
 from typing import Optional, Sequence
