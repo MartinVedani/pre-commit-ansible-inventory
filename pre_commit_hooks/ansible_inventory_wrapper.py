@@ -16,7 +16,7 @@ def main(argv: Optional[Sequence[str]] = None):
         if(cp.stderr):
             print(f"ansible-inventory failed on file {filename} with following output:")
             print(cp.stderr.decode())
-            print(f"For details manually run: ansible-inventory --graph -i {filename} -vvvv")
+            print(f"For details manually run: ansible-inventory --graph -i {filename} -vvvv\n")
             result = 1
     exit(result)
 
